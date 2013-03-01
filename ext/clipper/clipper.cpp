@@ -51,12 +51,12 @@ static double const almost_infinite = -3.39E+38;
 //(ie 100,000+) then tolerance should be adjusted up (since the significand
 //of type double is 15 decimal places). However, for the vast majority
 //of uses ... tolerance = 1.0e-10 will be just fine.
-static double const tolerance = 1.0E-10;
-static double const minimal_tolerance = 1.0E-14;
+static double const tolerance = 1.0E-15;
+static double const minimal_tolerance = 1.0E-15;
 //precision: defines when adjacent vertices will be considered duplicates
 //and hence ignored. This circumvents edges having indeterminate slope.
-static double const precision = 1.0E-6;
-static double const slope_precision = 1.0E-3;
+static double const precision = 1.0E-10;
+static double const slope_precision = 1.0E-15;
 static double const pi = 3.14159265358979;
 typedef enum _Direction { dRightToLeft, dLeftToRight } TDirection;
 static const TDoubleRect nullRect = {0,0,0,0};
